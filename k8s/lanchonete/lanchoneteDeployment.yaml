@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: container-lanchonete
-          image: piovezan1207/techchallenger-lanchonete-app:cleanv1.0.1
+          image: piovezan1207/techchallenger-lanchonete-app:latest
           ports:
             - containerPort: 8080
               protocol: TCP 
@@ -27,8 +27,4 @@ spec:
                 name: lanchonete-secret
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "250m"
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
+              cpu: 40m
